@@ -1,29 +1,34 @@
 <template>
   <HeaderComponent />
-  <MainComponent />
+  <div class="center-component">
+    <MainComponent />
+    <NewsComponent />
+  </div>
 </template>
 
 <script>
-import HeaderComponent from './components/header.vue'
-import MainComponent from './components/main.vue'
+import HeaderComponent from "./components/header.vue";
+import MainComponent from "./components/main.vue";
+import NewsComponent from "./components/news.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderComponent,
-    MainComponent
-  }
-}
+    MainComponent,
+    NewsComponent,
+  },
+};
 </script>
 
 <style>
 @font-face {
-  font-family: 'NotoSans';
-  src: url('./fonts/NotoSansGeorgian.ttf') format('woff2')
+  font-family: "NotoSans";
+  src: url("./fonts/NotoSansGeorgian.ttf") format("woff2");
 }
-html{
+html {
   height: 100vh;
-  width: 100vw; 
-  background-color: #F0F4F5;
+  width: 100vw;
+  background-color: #f0f4f5;
 }
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -33,10 +38,15 @@ html{
   text-align: center;
   width: 100%; */
 }
-body{
+body {
   margin: 0;
   padding: 0;
   /* min-height: 100vh; */
+}
+.center-component {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 </style>
 
