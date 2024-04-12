@@ -3,6 +3,10 @@
     <div class="img-container">
       <img src="../assets/region.jpg" class="img-class" />
     </div>
+    <div class="timeandfield">
+      <div class="field">12.08.2023</div>
+      <div class="field">პოლიტიკა</div>
+    </div>
   </div>
 </template>
 
@@ -27,5 +31,26 @@ export default {
   left: calc((100% - 952px) / 2);
   top: 12px;
   border-radius: 20px;
+}
+.timeandfield {
+    margin-top: 20px;
+    display: flex;
+    width: 180px;
+    justify-content: space-evenly;
+    margin-left: 12px;
+    gap: 12px;
+}
+.field{
+  color:#1D2D35;
+  font-weight: 700;
+  font-family: "NotoSans";
+  line-height: 16px;
+  font-size: 12px;
+  padding: 6px 8px;
+  background-color: #F5F8FF;
+  gap: 10px;
+  border-radius: 16px;
+  width: 85px;
+  height: 16px;
 }
 </style>
