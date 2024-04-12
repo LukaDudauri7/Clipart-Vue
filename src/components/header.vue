@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="header-container">
     <div class="center_container">
       <div class="navbar-menu">
         <div class="left-side">
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.header-container {
   background-color: white;
   width: 100%;
   height: 112px;
