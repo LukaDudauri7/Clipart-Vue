@@ -25,16 +25,6 @@
 <script>
 export default {
   name: "HeaderComponent",
-  data() {
-    return {
-      // isMenuOpen: false
-    };
-  },
-  // methods: {
-  //   toggleMenu() {
-  //     this.isMenuOpen = !this.isMenuOpen;
-  //   }
-  // }
 };
 </script>
 
