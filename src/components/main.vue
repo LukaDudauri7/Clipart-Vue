@@ -26,14 +26,8 @@
       <div class="field">12.08.2023</div>
       <div class="field">პოლიტიკა</div>
     </div>
-    <div class="main-text">
-      ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული
-      პროექტები დაიწყება
-    </div>
-    <div class="second-text">
-      განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”.
-      ობლიგაციის ნომინალი - 1000 USD
-    </div>
+    <div class="main-text">ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული პროექტები დაიწყება</div>
+    <div class="second-text">განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”. ობლიგაციის ნომინალი - 1000 USD</div>
   </div>
 </template>
 
@@ -115,14 +109,13 @@ export default {
   font-size: 16px;
   padding-left: 12px;
 }
-.swiper-button-next{
-  background: url(../assets/ArrowR.png);
+.swiper-button-prev, .swiper-button-next {
   width: 80px;
   height: 80px;
+  background-image: url('../assets/ArrowL.png');
+  background-size: cover;
 }
-.swiper-button-prev{
-  background: url(../assets/ArrowL.png);
-  width: 80px;
-  height: 80px;
+.swiper-button-next {
+  background-image: url('../assets/ArrowR.png');
 }
 </style>
