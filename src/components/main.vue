@@ -1,27 +1,12 @@
 <template>
   <div class="center-container">
     <div class="img-container">
-      <img src="../assets/region.jpg" class="img-class" />
-    </div>
-    <!-- Slider main container -->
-    <div class="timeandfield">
-      <div class="field">12.08.2023</div>
-      <div class="field">პოლიტიკა</div>
-    </div>
-    <div class="main-text">
-      ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული
-      პროექტები დაიწყება
-    </div>
-    <div class="second-text">
-      განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”.
-      ობლიგაციის ნომინალი - 1000 USD
-    </div>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
+      <img src="../assets/region.jpg" class="img-class swiper-slide" />
+        <!-- <div class="swiper-slide">Slide 1</div> -->
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
-        ...
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -31,6 +16,13 @@
       <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
     </div>
+    </div>
+    <div class="timeandfield">
+      <div class="field">12.08.2023</div>
+      <div class="field">პოლიტიკა</div>
+    </div>
+    <div class="main-text">ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული პროექტები დაიწყება</div>
+    <div class="second-text">განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”. ობლიგაციის ნომინალი - 1000 USD</div>
   </div>
 </template>
 
@@ -67,15 +59,6 @@ export default {
 </script>
 
 <style scoped>
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-.swiper-wrapper {
-  background: #ccc;
-  text-align: center;
-  font-size: 60px;
-}
 .center-container {
   margin-top: 40px;
   width: 976px;
@@ -84,7 +67,7 @@ export default {
   border-radius: 20px;
 }
 .img-class {
-  width: 952px;
+  width: 952px !important;
   height: 406px;
   position: relative;
   left: calc((100% - 952px) / 2);
