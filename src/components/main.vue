@@ -115,4 +115,14 @@ export default {
   font-size: 16px;
   padding-left: 12px;
 }
+.swiper-button-next{
+  background: url(../assets/ArrowR.png);
+  width: 80px;
+  height: 80px;
+}
+.swiper-button-prev{
+  background: url(../assets/ArrowL.png);
+  width: 80px;
+  height: 80px;
+}
 </style>
