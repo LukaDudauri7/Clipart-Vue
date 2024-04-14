@@ -3,22 +3,77 @@
     <div class="img-container">
       <img src="../assets/region.jpg" class="img-class" />
     </div>
+    <!-- Slider main container -->
     <div class="timeandfield">
       <div class="field">12.08.2023</div>
       <div class="field">პოლიტიკა</div>
     </div>
-    <div class="main-text">ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული პროექტები დაიწყება</div>
-    <div class="second-text">განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”. ობლიგაციის ნომინალი - 1000 USD</div>
+    <div class="main-text">
+      ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული
+      პროექტები დაიწყება
+    </div>
+    <div class="second-text">
+      განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”.
+      ობლიგაციის ნომინალი - 1000 USD
+    </div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
   </div>
 </template>
 
 <script>
+import Swiper from "swiper"; // Import Swiper at the beginning of the script section
 export default {
   name: "MainComponent",
+  mounted() {
+    new Swiper(".swiper", {
+      // Optional parameters
+      direction: "vertical",
+      loop: true,
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  },
 };
 </script>
 
 <style scoped>
+.swiper {
+  height: 500px;
+}
+.swiper-wrapper {
+  display: flex;
+  background: #ccc;
+  justify-content: center;
+  align-content: center;
+  font-size: 60px;
+}
 .center-container {
   margin-top: 40px;
   width: 976px;
@@ -35,21 +90,21 @@ export default {
   border-radius: 20px;
 }
 .timeandfield {
-    margin-top: 20px;
-    display: flex;
-    width: 180px;
-    justify-content: space-evenly;
-    margin-left: 12px;
-    gap: 12px;
+  margin-top: 20px;
+  display: flex;
+  width: 180px;
+  justify-content: space-evenly;
+  margin-left: 12px;
+  gap: 12px;
 }
-.field{
-  color:#1D2D35;
+.field {
+  color: #1d2d35;
   font-weight: 700;
   font-family: "NotoSans";
   line-height: 16px;
   font-size: 12px;
   padding: 6px 8px;
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
   gap: 10px;
   border-radius: 16px;
   width: 85px;
