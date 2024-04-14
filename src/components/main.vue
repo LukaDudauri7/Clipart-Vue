@@ -17,9 +17,7 @@
       ობლიგაციის ნომინალი - 1000 USD
     </div>
     <div class="swiper">
-      <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-        <!-- Slides -->
         <div class="swiper-slide">Slide 1</div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
@@ -37,14 +35,19 @@
 </template>
 
 <script>
-import Swiper from "swiper"; // Import Swiper at the beginning of the script section
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/bundle";
+import { Navigation, Pagination } from "swiper/modules";
 export default {
   name: "MainComponent",
   mounted() {
     new Swiper(".swiper", {
-      // Optional parameters
-      direction: "vertical",
-      loop: true,
+      modules: [Navigation, Pagination],
+      // direction: "vertical",
+      // loop: true,
       // If we need pagination
       pagination: {
         el: ".swiper-pagination",
@@ -65,13 +68,12 @@ export default {
 
 <style scoped>
 .swiper {
-  height: 500px;
+  width: 600px;
+  height: 300px;
 }
 .swiper-wrapper {
-  display: flex;
   background: #ccc;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
   font-size: 60px;
 }
 .center-container {
