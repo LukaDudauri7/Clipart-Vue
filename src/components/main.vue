@@ -100,7 +100,8 @@ export default {
   font-weight: 600;
   line-height: 40px;
   font-size: 24px;
-  padding: 12px;
+  padding-left: 12px;
+  padding-top: 5px;
 }
 .second-text {
   font-family: "NotoSans";
@@ -132,5 +133,23 @@ export default {
 }
 .swiper-scrollbar{
   display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .center-container{
+    width: 840px;
+  }
+  .news-container{
+    width: 264px !important;
+  }
+  .img-class{
+    width: 816px;
+    left: calc((100% - 816px)/2);
+  }
+  p {
+    width: 220px !important;
+  }
+  .news-header{
+    width: 220px !important;
+  }
 }
 </style>
