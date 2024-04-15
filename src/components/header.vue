@@ -108,7 +108,8 @@ input{
   background-image: url(../assets/search.png);
   background-repeat: no-repeat;
   background-size: 17.4px;
-    background-position: 150px;
+  background-position: 150px;
+  cursor: pointer;
 }
 .dropdown {
   position: relative;
