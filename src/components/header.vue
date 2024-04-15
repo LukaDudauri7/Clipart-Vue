@@ -9,7 +9,16 @@
             <a class="navbar-item" href="#">საზოგადოება</a>
             <a class="navbar-item" href="#">სამართალი</a>
             <a class="navbar-item" href="#">ბიზნესი & ეკონომიკა</a>
-            <a class="navbar-item" href="#">სხვა</a>
+            <div class="dropdown">
+              <a class="navbar-item" href="#" @click="toggleDropdown"
+                >სხვა<span class="arrow-icon"></span
+              ></a>
+              <div v-if="isDropdownOpen" class="dropdown-content">
+                <a href="#">ტექნოლოგიები</a>
+                <a href="#">სტარტაპები</a>
+                <a href="#">სპორტი</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="right-side">
@@ -25,6 +34,16 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data() {
+    return {
+      isDropdownOpen: false,
+    };
+  },
+  methods: {
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+  },
 };
 </script>
 
@@ -73,13 +92,38 @@ input {
 img {
   cursor: pointer;
 }
-.left-side{
+.left-side {
   display: flex;
   gap: 18px;
 }
-.right-side{
+.right-side {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.arrow-icon {
+  position: absolute;
+  background-image: url(../assets/arrow.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 7px;
+  top: 8px;
+  left: 42px;
 }
 </style>
