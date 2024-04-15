@@ -5,12 +5,12 @@
         <div class="left-side">
           <img src="../assets/Logo.png" />
           <div class="navbar-end">
-            <a class="navbar-item" href="#">პოლიტიკა</a>
-            <a class="navbar-item" href="#">საზოგადოება</a>
-            <a class="navbar-item" href="#">სამართალი</a>
+            <a class="navbar-item none" href="#">პოლიტიკა</a>
+            <a class="navbar-item none" href="#">საზოგადოება</a>
+            <a class="navbar-item none" href="#">სამართალი</a>
             <a class="navbar-item titlenone" href="#">ბიზნესი & ეკონომიკა</a>
             <div class="dropdown">
-              <a class="navbar-item" href="#" @click="toggleDropdown">სხვა<span class="arrow-icon"></span></a>
+              <a class="navbar-item none" href="#" @click="toggleDropdown">სხვა<span class="arrow-icon"></span></a>
               <div v-if="isDropdownOpen" class="dropdown-content">
                 <a href="#">ტექნოლოგიები</a>
                 <a href="#">სტარტაპები</a>

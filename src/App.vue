@@ -46,8 +46,9 @@ body {
 .center-component {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 22px;
 }
+/* laptop */
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .center-container{
     width: 840px;
@@ -63,12 +64,25 @@ body {
     width: 220px !important;
   }
 }
+/* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   .center-component{
     flex-direction: column;
   } 
   .menu{
-    display: block;
+    display: block !important;
+  }
+  .none, .titlenone {
+    display: none;
+  }
+  .center-container{
+    width: 840px;
+    position: relative;
+    left: calc((100% - 840px) / 2);
+  }
+  .img-class{
+    width: 816px;
+    left: calc((100% - 816px) / 2);
   }
 }
 @media (max-width: 768px) {
