@@ -3,7 +3,9 @@
     <div class="center_container">
       <div class="navbar-menu">
         <div class="left-side">
-          <img src="../assets/Logo.png" />
+          <div class="basecamp">
+            <img src="../assets/HeaderImages/Logo.png"/>
+          </div>
           <div class="navbar-end">
             <a class="navbar-item none" href="#">პოლიტიკა</a>
             <a class="navbar-item none" href="#">საზოგადოება</a>
@@ -21,10 +23,11 @@
           </div>
         </div>
         <div class="right-side">
-          <img src="../assets/instagram.png" class="navbar-logo" />
-          <img src="../assets/facebook.png" class="navbar-logo" />
+          <img src="../assets/HeaderImages/instagram.png" class="navbar-logo" />
+          <img src="../assets/HeaderImages/facebook.png" class="navbar-logo" />
           <input placeholder="ძიება" />
-        <div class="menu"></div>
+        <div class="menu">
+        </div>
         </div>
       </div>
     </div>
@@ -67,6 +70,10 @@ export default {
   display: flex;
   gap: 200px;
 }
+.basecamp{
+  width: 165px;
+  height: 48px;
+}
 a {
   text-decoration: none;
   color: #657178;
@@ -106,14 +113,14 @@ input{
   padding: 9px;
   background-color: #F5F8FF;
   border: none;
-  background-image: url(../assets/search.png);
+  background-image: url(../assets/HeaderImages/search.png);
   background-repeat: no-repeat;
   background-size: 17.4px;
   background-position: 150px;
   cursor: pointer;
 }
 .menu{
-  background-image: url(../assets/menu.png);
+  background-image: url(../assets/HeaderImages/menu.png);
   width: 48px;
   height: 48px;
   cursor: pointer;

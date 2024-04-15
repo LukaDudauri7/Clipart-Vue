@@ -4,18 +4,21 @@
     <MainComponent />
     <NewsComponent />
   </div>
+  <FactsComponent />
 </template>
 
 <script>
 import HeaderComponent from "./components/header.vue";
 import MainComponent from "./components/main.vue";
 import NewsComponent from "./components/news.vue";
+import FactsComponent from "./components/facts.vue";
 export default {
   name: "App",
   components: {
     HeaderComponent,
     MainComponent,
     NewsComponent,
+    FactsComponent,
   },
 };
 </script>
@@ -41,7 +44,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* min-height: 100vh; */
 }
 .center-component {
   display: flex;

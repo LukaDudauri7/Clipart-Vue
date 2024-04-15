@@ -30,7 +30,7 @@ export default {
 }
 .paragraphs {
   overflow: auto;
-  height: calc(100% - 60px); /* Adjusted height to accommodate h1 */
+  height: calc(100% - 60px);
 }
 h1 {
   font-size: 20px;

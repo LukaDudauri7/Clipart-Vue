@@ -4,16 +4,16 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="../assets/downtown.jpg" class="img-class" />
+            <img src="../assets/MainImages/downtown.jpg" class="img-class" />
           </div>
             <div class="swiper-slide">
-          <img src="../assets/region.jpg" class="img-class" />
+          <img src="../assets/MainImages/region.jpg" class="img-class" />
             </div>
             <div class="swiper-slide">
-          <img src="../assets/buildings.jpg" class="img-class" />
+          <img src="../assets/MainImages/buildings.jpg" class="img-class" />
             </div>
             <div class="swiper-slide">
-          <img src="../assets/chicago.jpg" class="img-class" />
+          <img src="../assets/MainImages/chicago.jpg" class="img-class" />
             </div>
         </div>
         <div class="swiper-pagination"></div>
