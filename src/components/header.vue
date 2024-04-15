@@ -8,15 +8,14 @@
             <a class="navbar-item" href="#">პოლიტიკა</a>
             <a class="navbar-item" href="#">საზოგადოება</a>
             <a class="navbar-item" href="#">სამართალი</a>
-            <a class="navbar-item" href="#">ბიზნესი & ეკონომიკა</a>
+            <a class="navbar-item titlenone" href="#">ბიზნესი & ეკონომიკა</a>
             <div class="dropdown">
-              <a class="navbar-item" href="#" @click="toggleDropdown"
-                >სხვა<span class="arrow-icon"></span
-              ></a>
+              <a class="navbar-item" href="#" @click="toggleDropdown">სხვა<span class="arrow-icon"></span></a>
               <div v-if="isDropdownOpen" class="dropdown-content">
                 <a href="#">ტექნოლოგიები</a>
                 <a href="#">სტარტაპები</a>
                 <a href="#">სპორტი</a>
+                <a href="#" class="dropdownnone">ბიზნესი & ეკონომიკა</a>
               </div>
             </div>
           </div>
@@ -56,7 +55,6 @@ export default {
   justify-content: center;
 }
 .center_container {
-  max-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +64,7 @@ export default {
 }
 .navbar-menu {
   display: flex;
-  gap: 60px;
+  gap: 200px;
 }
 a {
   text-decoration: none;
@@ -87,7 +85,8 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  margin-left: 10px;
 }
 img {
   cursor: pointer;
@@ -116,6 +115,7 @@ img {
 }
 .dropdown:hover .dropdown-content {
   display: flex;
+  z-index: 2;
 }
 .arrow-icon {
   position: absolute;
@@ -125,5 +125,19 @@ img {
   height: 7px;
   top: 8px;
   left: 42px;
+}
+.dropdownnone{
+  display: none;
+}
+.titlenone{
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .dropdownnone{
+    display: block;
+  }
+  .titlenone{
+    display: none;
+  }
 }
 </style>
