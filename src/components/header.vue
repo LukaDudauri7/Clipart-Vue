@@ -24,6 +24,7 @@
           <img src="../assets/instagram.png" class="navbar-logo" />
           <img src="../assets/facebook.png" class="navbar-logo" />
           <input placeholder="ძიება" />
+        <div class="menu"></div>
         </div>
       </div>
     </div>
@@ -110,6 +111,13 @@ input{
   background-size: 17.4px;
   background-position: 150px;
   cursor: pointer;
+}
+.menu{
+  background-image: url(../assets/menu.png);
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: none;
 }
 .dropdown {
   position: relative;

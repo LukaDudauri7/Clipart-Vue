@@ -59,10 +59,7 @@ body {
     width: 816px;
     left: calc((100% - 816px)/2);
   }
-  p {
-    width: 220px !important;
-  }
-  .news-header{
+  p, .news-header {
     width: 220px !important;
   }
 }
@@ -70,6 +67,9 @@ body {
   .center-component{
     flex-direction: column;
   } 
+  .menu{
+    display: block;
+  }
 }
 @media (max-width: 768px) {
   .center-container{
