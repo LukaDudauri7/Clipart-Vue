@@ -100,6 +100,16 @@ img {
   gap: 12px;
   align-items: center;
 }
+input{
+  border-radius: 64px;
+  padding: 9px;
+  background-color: #F5F8FF;
+  border: none;
+  background-image: url(../assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 17.4px;
+    background-position: 150px;
+}
 .dropdown {
   position: relative;
 }
