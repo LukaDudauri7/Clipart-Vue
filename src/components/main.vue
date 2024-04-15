@@ -58,7 +58,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .center-container {
   margin-top: 40px;
   width: 976px;
@@ -117,5 +117,20 @@ export default {
 }
 .swiper-button-next {
   background-image: url('../assets/ArrowR.png');
+}
+.swiper-button-next:after,.swiper-button-prev:after{
+  display: none;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+}
+.swiper-pagination-bullet-active{
+  width: 24px;
+  height: 8px;
+  border-radius: 64px;
+  background-color: white;
+}
+.swiper-scrollbar{
+  display: none;
 }
 </style>
